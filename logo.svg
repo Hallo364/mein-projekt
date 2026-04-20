@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Praxis Digital Logo">
+  <defs>
+    <linearGradient id="pd-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#pd-grad)"/>
+  <path d="M60 40 H118 C142 40 158 56 158 80 C158 104 142 120 118 120 H82 V160 H60 Z M82 60 V100 H116 C128 100 136 92 136 80 C136 68 128 60 116 60 Z" fill="#ffffff"/>
+  <circle cx="150" cy="150" r="14" fill="#fbbf24"/>
+  <circle cx="150" cy="150" r="6" fill="#ffffff"/>
+</svg>
