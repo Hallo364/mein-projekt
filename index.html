@@ -3,108 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praxis Digital</title>
+  <title>Praxis Digital — Websites für Ärzte & Therapeuten</title>
+  <meta name="description" content="Moderne, rechtssichere Praxis-Websites zum Festpreis. Inklusive Doctolib, Google-Optimierung und laufender Betreuung.">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#">
-      <img src="logo.svg" alt="Praxis Digital Logo" class="brand__logo">
-      <span class="brand__name">Praxis Digital</span>
-    </a>
-    <nav class="site-nav">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#ueber-uns">Über uns</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+    <div class="container site-header__inner">
+      <a class="brand" href="#">
+        <img src="logo.svg" alt="" class="brand__logo">
+        <span class="brand__name">Praxis<span class="brand__name--accent">Digital</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#preise">Preise</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a href="#kontakt" class="btn btn--primary btn--sm">Termin buchen</a>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <img src="logo.svg" alt="" class="hero__logo" aria-hidden="true">
-      <h1>Willkommen bei Praxis Digital</h1>
-      <p>Ihre Partner für moderne Weblösungen und digitale Erlebnisse.</p>
-      <a href="#kontakt" class="cta">Jetzt anfragen</a>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow">Webdesign für Praxen</span>
+          <h1 class="hero__title">Ihre Praxis.<br><span class="gradient-text">Digital auf den Punkt.</span></h1>
+          <p class="hero__lead">Website, Hosting und Support — alles aus einer Hand. Festpreis, DSGVO-konform, ohne Technikstress.</p>
+          <div class="hero__actions">
+            <a href="#preise" class="btn btn--primary">Preise ansehen</a>
+            <a href="#kontakt" class="btn btn--ghost">Kostenloses Erstgespräch</a>
+          </div>
+          <div class="hero__proof">
+            <div class="hero__proof-item"><strong>2.990&nbsp;€</strong><span>Festpreis, alles drin</span></div>
+            <div class="hero__proof-item"><strong>DSGVO</strong><span>rechtssicher</span></div>
+            <div class="hero__proof-item"><strong>24&nbsp;h</strong><span>Support-Reaktion</span></div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__glow"></div>
+          <img src="logo.svg" alt="" class="hero__logo">
+          <div class="hero__chip hero__chip--1">Doctolib&nbsp;integriert</div>
+          <div class="hero__chip hero__chip--2">SEO-optimiert</div>
+          <div class="hero__chip hero__chip--3">Google&nbsp;Business</div>
+        </div>
+      </div>
     </section>
 
-    <section id="leistungen" class="section">
-      <h2>Leistungen &amp; Preise</h2>
-      <p class="section__lead">Einmaliger Festpreis für Ihre neue Website, laufende Betreuung als flexibles Abo.</p>
-
-      <h3 class="pricing__group-title">Website-Erstellung</h3>
-      <div class="pricing pricing--single">
-        <article class="plan plan--highlight">
-          <div class="plan__header">
-            <h4 class="plan__name">Festpreis-Paket</h4>
-            <p class="plan__price"><span class="plan__amount">2.990&nbsp;€</span><span class="plan__period">einmalig</span></p>
-            <p class="plan__tagline">Komplettlösung für Ihren digitalen Auftritt</p>
-          </div>
-          <ul class="plan__features">
-            <li>Vollständig individualisiert erstellte Website mit unbegrenzten Änderungen</li>
-            <li>Domain inklusive</li>
-            <li>DSGVO-konform und rechtssicheres Impressum</li>
-            <li>Verlinkung eines bestehenden Doctolib-Accounts oder Erstellung mit Verknüpfung</li>
-            <li>Google-Auftritt verbessern: Daten aktualisieren, Website verknüpfen, Bilder einfügen</li>
-            <li>SEO-Optimierung</li>
-          </ul>
-          <a href="#kontakt" class="plan__cta">Jetzt anfragen</a>
-        </article>
+    <section id="leistungen" class="features">
+      <div class="container">
+        <div class="section-head section-head--left">
+          <span class="eyebrow">Was Sie bekommen</span>
+          <h2 class="section-title">Alles, was eine moderne Praxis-Website braucht.</h2>
+        </div>
+        <div class="features__grid">
+          <article class="feature">
+            <div class="feature__icon">★</div>
+            <h3 class="feature__title">Festpreis</h3>
+            <p class="feature__text">Kein Stundenzählen. Ein Preis, alles drin.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">✓</div>
+            <h3 class="feature__title">DSGVO-sicher</h3>
+            <p class="feature__text">Rechtssicheres Impressum &amp; Datenschutz.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">◐</div>
+            <h3 class="feature__title">Doctolib ready</h3>
+            <p class="feature__text">Terminbuchung nahtlos integriert.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon">↗</div>
+            <h3 class="feature__title">SEO &amp; Google</h3>
+            <p class="feature__text">Besser gefunden. Mehr Patienten.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <h3 class="pricing__group-title">Laufende Betreuung</h3>
-      <div class="pricing pricing--dual">
-        <article class="plan">
-          <div class="plan__header">
-            <h4 class="plan__name">Basis-Abo</h4>
-            <p class="plan__price"><span class="plan__amount">29&nbsp;€</span><span class="plan__period">pro Monat</span></p>
-            <p class="plan__tagline">Sicherer Betrieb &amp; kleinere Änderungen</p>
-          </div>
-          <ul class="plan__features">
-            <li>Hosting der Website / laufender technischer Betrieb</li>
-            <li>Regelmäßige System- und Sicherheitsupdates</li>
-            <li>Backups</li>
-            <li>Wiederherstellung im Problemfall aus Backup</li>
-            <li>Technischer Support bei Störungen oder Ausfällen</li>
-            <li>Überwachung, dass die Website erreichbar bleibt</li>
-            <li>Kleinere Textänderungen / Austausch von Bildern</li>
-            <li>Anpassung von Öffnungszeiten, Kontaktdaten oder Teamangaben</li>
-            <li>Einpflege neuer Leistungen im bestehenden Seitenrahmen</li>
-            <li>Telefonischer Support innerhalb von 24&nbsp;h</li>
-            <li>Änderung von Seitenstruktur / Design (einmal pro Jahr)</li>
-          </ul>
-          <a href="#kontakt" class="plan__cta">Basis wählen</a>
-        </article>
+    <section id="preise" class="pricing-section">
+      <div class="container">
 
-        <article class="plan plan--highlight">
-          <span class="plan__badge">Empfohlen</span>
-          <div class="plan__header">
-            <h4 class="plan__name">Plus-Abo</h4>
-            <p class="plan__price"><span class="plan__amount">79&nbsp;€</span><span class="plan__period">pro Monat</span></p>
-            <p class="plan__tagline">Erweiterte Betreuung für anspruchsvolle Praxen</p>
+        <div class="festpreis">
+          <div class="festpreis__left">
+            <span class="eyebrow">Website-Erstellung</span>
+            <h2 class="section-title">Komplette Website.<br>Einmalig. Fertig.</h2>
+            <p class="section-lead">Individuell gestaltet. Unbegrenzte Änderungen bis Sie zufrieden sind.</p>
+            <ul class="check-list check-list--two">
+              <li>Individuelles Design</li>
+              <li>Domain inklusive</li>
+              <li>DSGVO-konform</li>
+              <li>Doctolib-Anbindung</li>
+              <li>Google-Auftritt</li>
+              <li>SEO-Optimierung</li>
+            </ul>
           </div>
-          <ul class="plan__features">
-            <li>Alle Leistungen des Basis-Abos</li>
-            <li>Hosting der Website / laufender technischer Betrieb</li>
-            <li>Regelmäßige System- und Sicherheitsupdates</li>
-            <li>Backups</li>
-            <li>Wiederherstellung im Problemfall aus Backup</li>
-            <li>Technischer Support bei Störungen oder Ausfällen</li>
-            <li>Überwachung, dass die Website erreichbar bleibt</li>
-            <li>Kleinere Textänderungen / Austausch von Bildern</li>
-            <li>Anpassung von Öffnungszeiten, Kontaktdaten oder Teamangaben</li>
-            <li>Einpflege neuer Leistungen im bestehenden Seitenrahmen</li>
-            <li>Telefonischer Support innerhalb von 24&nbsp;h</li>
-            <li>Änderung von Seitenstruktur / Design (einmal pro Jahr)</li>
-          </ul>
-          <a href="#kontakt" class="plan__cta">Plus wählen</a>
-        </article>
+          <aside class="festpreis__card">
+            <span class="festpreis__badge">Festpreis</span>
+            <div class="festpreis__price">
+              <span class="festpreis__amount">2.990&nbsp;€</span>
+              <span class="festpreis__period">einmalig · inkl. MwSt.</span>
+            </div>
+            <p class="festpreis__hint">Unbegrenzte Änderungen bis zur Fertigstellung.</p>
+            <a href="#kontakt" class="btn btn--primary btn--block">Jetzt starten</a>
+            <p class="festpreis__small">Kostenfreies Erstgespräch · Keine versteckten Kosten</p>
+          </aside>
+        </div>
+
+        <div class="abos">
+          <div class="section-head section-head--left abos__head">
+            <span class="eyebrow">Laufende Betreuung</span>
+            <h2 class="section-title">Technik, Sicherheit, Support.<br>Monatlich kündbar.</h2>
+          </div>
+
+          <div class="abos__grid">
+            <article class="plan">
+              <header class="plan__header">
+                <h3 class="plan__name">Basis</h3>
+                <p class="plan__price"><span class="plan__amount">29&nbsp;€</span><span class="plan__period">/Monat</span></p>
+                <p class="plan__tag">Sicherer Betrieb &amp; kleinere Änderungen</p>
+              </header>
+              <ul class="plan__features">
+                <li>Hosting &amp; technischer Betrieb</li>
+                <li>Sicherheitsupdates &amp; Backups</li>
+                <li>Erreichbarkeits-Monitoring</li>
+                <li>Text- und Bildänderungen</li>
+                <li>Telefon-Support in 24&nbsp;h</li>
+                <li>1× jährlich Design-Update</li>
+              </ul>
+              <a href="#kontakt" class="btn btn--ghost btn--block">Basis wählen</a>
+            </article>
+
+            <article class="plan plan--featured">
+              <span class="plan__badge">Empfohlen</span>
+              <header class="plan__header">
+                <h3 class="plan__name">Plus</h3>
+                <p class="plan__price"><span class="plan__amount">79&nbsp;€</span><span class="plan__period">/Monat</span></p>
+                <p class="plan__tag">Für anspruchsvolle Praxen</p>
+              </header>
+              <ul class="plan__features">
+                <li>Alles aus Basis enthalten</li>
+                <li>Priorisierter Support</li>
+                <li>Erweiterte SEO-Betreuung</li>
+                <li>Mehr Änderungen pro Monat</li>
+                <li>Quartalsweise Performance-Report</li>
+                <li>Design-Updates nach Bedarf</li>
+              </ul>
+              <a href="#kontakt" class="btn btn--primary btn--block">Plus wählen</a>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="kontakt" class="cta-banner">
+      <div class="container cta-banner__inner">
+        <div class="cta-banner__text">
+          <h2 class="cta-banner__title">Bereit für Ihre neue Praxis-Website?</h2>
+          <p class="cta-banner__lead">Kostenloses Erstgespräch. Unverbindliches Angebot in 24&nbsp;Stunden.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="mailto:kontakt@praxis-digital.de" class="btn btn--light">Termin anfragen</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Praxis Digital</p>
+    <div class="container site-footer__inner">
+      <a class="brand" href="#">
+        <img src="logo.svg" alt="" class="brand__logo">
+        <span class="brand__name">Praxis<span class="brand__name--accent">Digital</span></span>
+      </a>
+      <p class="site-footer__copy">&copy; 2026 Praxis Digital · Alle Rechte vorbehalten</p>
+    </div>
   </footer>
 </body>
 </html>
